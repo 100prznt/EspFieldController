@@ -1,5 +1,8 @@
 # EspFieldController
-Modular hardware controller for integration into ESPHome.
+Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
+
+
+
 
 ## Onbaord Funktionen
 ### Netzteil
@@ -7,10 +10,34 @@ Modular hardware controller for integration into ESPHome.
 * Versorgung von ESP und Peripherie
 * 24 VDC und 5 VDC
 * 3,3 VDC über linearen Spannungsregler
+* Automatische Umschaltung zwischen Versorgung per Netzteil und USB
+
+### ESP
+* Wemos Lolin S2 mini mit ESP32-S2
+* optional bestückbar mit Wemos D1 mini?
+
+
+### Erweiterungsport
+* 2 unabhängige Ports
+* I2C (SCL, SDA)
+* 4 GPIOs
+* 24V
+* 5V
+* 3V3
+* TE Micro-Match
+
+#### I2C Standardpins
+| GPIO | ESP32 | ESP8266 |
+|------|-------|---------|
+| 4    |       | SDA     |
+| 5    |       | SCL     |
+| 21   | SDA   |         |
+| 22   | SCL   |         |
+
+
 ### Relais
-Spezifikation
 * 2 unabhängige Kanäle
-* 230 VAC 10 A
+* 230 VAC 10 A (einpolig)
 * 230 VAC Eingang über Netzklemme, L, N, PE (welche auch das Onboard Netzteil versorgt)
 * Ausgangsklemmen inkl. N und PE
 #### Safty Circuit
