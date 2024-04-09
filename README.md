@@ -4,7 +4,7 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 
 
 
-## Onbaord Funktionen
+## Onboard Funktionen
 ### Netzteil
 * 230 VAC Netzklemme
 * Versorgung von ESP und Peripherie
@@ -13,8 +13,7 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 * Automatische Umschaltung zwischen Versorgung per Netzteil und USB
 
 ### ESP
-* Wemos Lolin S2 mini mit ESP32-S2
-* optional bestückbar mit Wemos D1 mini?
+* Arduino Nano ESP32
 
 
 ### Erweiterungsport
@@ -26,13 +25,14 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 * 3V3
 * TE Micro-Match
 
-#### I2C Standardpins
-| GPIO | ESP32 | ESP8266 |
-|------|-------|---------|
-| 4    |       | SDA     |
-| 5    |       | SCL     |
-| 21   | SDA   |         |
-| 22   | SCL   |         |
+#### Standardpins
+| ~D | GPIO | I2C | SPI         |
+|----|------|-----|-------------|
+| 21 | 11   | SDA |             |
+| 22 | 12   | SCL |             |
+| 11 | 38   |     | COPI (MOSI) |
+| 12 | 47   |     | CIPO (MISO) |
+| 13 | 48   |     | SCK         |
 
 
 ### Relais
