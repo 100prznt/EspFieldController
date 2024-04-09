@@ -5,42 +5,46 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 
 
 ## Onboard Funktionen
+
+### ESP Board
+* Arduino Nano ESP32 (NORA-W106-10B [ESP32-S3])
+* Alternative (low-cost) Boards per individueller PCB (mapping auf Nano Footprint) 
+#### Pinning
+![Pinning Arduino Nano ESP32](docu/arduino_nano_esp32_pinning.png)
+
 ### Netzteil
 * 230 VAC Netzklemme
 * Versorgung von ESP und Peripherie
-* 24 VDC und 5 VDC
+* 24 VDC (VEXT) und 5 VDC (VIN)
+#### Auf Arduino Nano ESP
+* Schutzdiode zwischen USB und VIN
 * 3,3 VDC über linearen Spannungsregler
-* Automatische Umschaltung zwischen Versorgung per Netzteil und USB
-
-### ESP
-* Arduino Nano ESP32
-
 
 ### Erweiterungsport
-* 2 unabhängige Ports
+* 2 unabhängige Ports (EXT1 und EXT2)
 * I2C (SCL, SDA)
-* 4 GPIOs
+* 2 GPIOs
 * 24V
 * 5V
 * 3V3
-* TE Micro-Match
+* TE Micro-Match 8-pin
 
 #### Standardpins
 | ~D | GPIO | I2C | SPI         |
 |----|------|-----|-------------|
 | 21 | 11   | SDA |             |
 | 22 | 12   | SCL |             |
+| 10 | 21   |     | CS          |
 | 11 | 38   |     | COPI (MOSI) |
 | 12 | 47   |     | CIPO (MISO) |
 | 13 | 48   |     | SCK         |
-
 
 ### Relais
 * 2 unabhängige Kanäle
 * 230 VAC 10 A (einpolig)
 * 230 VAC Eingang über Netzklemme, L, N, PE (welche auch das Onboard Netzteil versorgt)
 * Ausgangsklemmen inkl. N und PE
-#### Safty Circuit
+#### Safety Circuit
 * Optional per eigenen Controller (alternativ per Jumper oder 0R gebrückt)
 * Softwarefunktionen
   * Überwachung des ESP per Watchdog
@@ -49,3 +53,41 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 * Mögliche Controller
   * ATtiny25 (SOIC)
   * MSPM0C1104 (Cortex-M0+; SOT-23-THN)
+
+### 1-Wire
+* 3 Stecker auf einem Bus (2,54 mm Stiftleiste)
+
+### Eingänge
+* 3 Digitale Eingänge 3,3 - 24 V
+* Isoliert per Optokoppler
+* 1 Analoger Eingang
+
+## GPIO Zuordnung
+
+| GPIO | Funktion             | Funktionseinheit | Beschreibung |
+|------|----------------------|------------------|--------------|
+| 0    | LED green            |                  |              |
+| 1    |                      | EXT1             |              |
+| 2    |                      | EXT1             |              |
+| 3    |                      | EXT2             |              |
+| 4    |                      | EXT2             |              |
+| 5    |                      | 1-Wire           |              |
+| 6    |                      | Eingang          |              |
+| 7    |                      | Relais           | IN EN        |
+| 8    |                      | Relais           | OUT Watchdog |
+| 9    |                      | Relais           | OUT CH1      |
+| 10   |                      | Relais           | OUT CH2      |
+| 11   | I2C SDA              | EXT1 u. EXT2     |              |
+| 12   | I2C SCL              | EXT1 u. EXT2     |              |
+| 13   |                      | Eingang          |              |
+| 14   |                      | Eingang          |              |
+| 17   |                      | Analogeingang    |              |
+| 18   |                      |                  |              |
+| 21   |                      |                  |              |
+| 38   | SPI COPI             |                  |              |
+| 43   | UART RX0             |                  |              |
+| 44   | UART TX0             |                  |              |
+| 45   | LED blue             |                  |              |
+| 46   | LED red              |                  |              |
+| 47   | SPI CIPO             |                  |              |
+| 48   | SPI SCK; LED_BUILDIN |                  |              |
