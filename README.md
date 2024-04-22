@@ -53,6 +53,18 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 * Mögliche Controller
   * ATtiny25 (SOIC)
   * MSPM0C1104 (Cortex-M0+; SOT-23-THN)
+ 
+##### Pinning
+| Pin | Port | ATtiny25                               | Funktion    |
+|-----|------|----------------------------------------|-------------|
+| 1   | PB5  | PCINT5/RESET/ADC0/dW                   | Watchdog    |
+| 2   | PB3  | PCINT3/XTAL1/CLKI/OC1B/ADC3            | Ch1 Enable  |
+| 3   | PB4  | PCINT4/XTAL2/CLKO/OC1B/ADC2            | Ch2 Enable  |
+| 4   | GND  |                                        |             |
+| 5   | PB0  | MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0 | Ext. Enable |
+| 6   | PB1  | MISO/DO/AIN1/OC0B/OC1A/PCINT1          | Ch2 Out     |
+| 7   | PB2  | SCK/USCK/SCL/ADC1/T0/INT0/PCINT2       | Ch1 Out     |
+| 8   | VCC  |                                        |             |
 
 ### 1-Wire
 * 3 Stecker auf einem Bus (2,54 mm Stiftleiste)
