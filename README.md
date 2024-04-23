@@ -84,7 +84,7 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 | 3    |                      | EXT2             |              |
 | 4    |                      | EXT2             |              |
 | 5    |                      | 1-Wire           |              |
-| 6    |                      | Eingang          |              |
+| 6    |                      | Taster           |              |
 | 7    |                      | Relais           | IN EN        |
 | 8    |                      | Relais           | OUT Watchdog |
 | 9    |                      | Relais           | OUT CH1      |
