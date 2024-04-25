@@ -1,3 +1,5 @@
+![CAD rendering EspFieldController PCB](docu/efc_pcb_redering_topview_cropped.png)
+
 # EspFieldController
 Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 
