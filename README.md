@@ -62,7 +62,7 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 * Optional per eigenen Controller (alternativ per Jumper oder 0R gebrückt)
 * Softwarefunktionen
   * Überwachung des ESP per Watchdog
-  * Externe Freigabe per Enable Eingang
+  * Externe Freigabe per Enable Eingang (isoliert)
   * Verriegelung der Kanäle (inkl. Definition von Umschaltzeiten)
 * Mögliche Controller
   * ATtiny25 (SOIC)
@@ -84,9 +84,8 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 * 3 Stecker auf einem Bus (2,54 mm Stiftleiste)
 
 ### Eingänge
-* 3 Digitale Eingänge 3,3 - 24 V
-* Isoliert per Optokoppler
-* 1 Analoger Eingang
+* 2 digitale isolierte Eingänge
+* 1 analoger Eingang
 
 ## GPIO Zuordnung
 
@@ -117,3 +116,6 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 | 46   | LED red              |                  |              |
 | 47   | SPI CIPO             |                  |              |
 | 48   | SPI SCK; LED_BUILDIN |                  |              |
+
+
+![](docu/efc_pcb_cad_iso.png)
