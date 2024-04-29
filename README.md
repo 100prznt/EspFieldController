@@ -1,3 +1,5 @@
+![CAD rendering EspFieldController PCB](docu/efc_pcb_rendering_topview_cropped.png)
+
 # EspFieldController
 Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 
@@ -28,6 +30,18 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 * 5V
 * 3V3
 * TE Micro-Match 8-pin
+
+#### Pinning Micro-Match
+| Pin |       | Funktion | GPIO   |
+|-----|-------|----------|--------|
+| 1  | Supply | +5 V     |        |
+| 2  | Supply | +3.3 V   |        |
+| 3  | IO     | EXT1_IO1 |        |
+| 4  | IO     | EXT2_IO2 |        |
+| 5  | I2C    | SDA      | GPIO11 |
+| 6  | I2C    | SCL      | GPIO12 |
+| 7  | 1-Wire | Data     | GPIO5  |
+| 8  |        | GND      |        |
 
 #### Standardpins
 | ~D | GPIO | I2C | SPI         |
