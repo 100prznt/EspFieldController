@@ -1,4 +1,7 @@
-![CAD rendering EspFieldController PCB](docu/war_assembly.png)
 
 # Water Analytic Riser
-Nimmt zwei Atlas Scientific EZO Module auf.
+
+Erweitert den ESP Field Controller um zwei EZO Circuit Sockel, welche die entsprechenden Module von Atlas Scientifics aufnehmen können.
+
+![Zusammenbau im Spelsberg Gehäuse](docu/war_assembly.png)
+

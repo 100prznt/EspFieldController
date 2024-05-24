@@ -1,74 +1,42 @@
 ![CAD rendering EspFieldController PCB](docu/efc_pcb_rendering_topview_cropped.png)
 
-# EspFieldController
+# ESP Field Controller
 Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 
+Mit dem **ESP Field Controller** möchte ich eine Hardwarebasis für den Einsatz von ESPHome im "Außenbereich", also zumindest außerhab von Wohnräumen, schaffen. Eine wichtige Anforderung ist hier natürlich die [Schutzart](https://de.wikipedia.org/wiki/Schutzart). Daher wird der Controller in ein entsprechnd klassifiziertes Gehäuse montiert und verfügt auch über ein eigenes Netzteil. Basisfunktionalität, welche sehr oft benötigt wird, bringt der Controller selber mit. Für Anwendungen, welche etwas speziellere Features benötigen, lässt sich der Controller modular erweitern.
 
-
-
-## Onboard Funktionen
-
-### ESP Board
-* Arduino Nano ESP32 (NORA-W106-10B [ESP32-S3])
-* Alternative (low-cost) Boards per individueller PCB (mapping auf Nano Footprint) 
-#### Pinning
-![Pinning Arduino Nano ESP32](docu/arduino_nano_esp32_pinning.png)
+## Basisfunktionen
 
 ### Netzteil
 * 230 VAC Netzklemme
-* Versorgung von ESP und Peripherie
-* 24 VDC (VEXT) und 5 VDC (VIN)
-#### Auf Arduino Nano ESP
+* Versorgung von Arduino Nano ESP32 und Peripherie
+* 5 VDC (VIN)
+#### Auf Arduino Nano ESP32
 * Schutzdiode zwischen USB und VIN
 * 3,3 VDC über linearen Spannungsregler
 
-### Erweiterungsport
-* 2 unabhängige Ports (EXT1 und EXT2)
-* I2C (SCL, SDA)
-* 2 GPIOs
-* 24V
-* 5V
-* 3V3
-* TE Micro-Match 8-pin
+### Eingänge
+* 2 digitale Eingänge, per Optokoppler Isoliert (Spannung kann über Widerstandsnetzwerk individuell festgelegt werden)
+* 1 digitaler Freigabeeingang für Safety Circuit, per Optokoppler Isoliert (Spannung kann über Widerstandsnetzwerk individuell festgelegt werden)
+* 1 analoger Eingang (Spannungsbereich kann über Widerstandsnetzwerk individuell festgelegt werden)
+* 1 Taster
 
-#### Pinning Micro-Match
-| Pin |       | Funktion | GPIO   |
-|-----|-------|----------|--------|
-| 1  | Supply | +5 V     |        |
-| 2  | Supply | +3.3 V   |        |
-| 3  | IO     | EXT1_IO1 |        |
-| 4  | IO     | EXT2_IO2 |        |
-| 5  | I2C    | SDA      | GPIO11 |
-| 6  | I2C    | SCL      | GPIO12 |
-| 7  | 1-Wire | Data     | GPIO5  |
-| 8  |        | GND      |        |
+### Ausgänge
 
-#### Standardpins
-| ~D | GPIO | I2C | SPI         |
-|----|------|-----|-------------|
-| 21 | 11   | SDA |             |
-| 22 | 12   | SCL |             |
-| 10 | 21   |     | CS          |
-| 11 | 38   |     | COPI (MOSI) |
-| 12 | 47   |     | CIPO (MISO) |
-| 13 | 48   |     | SCK         |
-
-### Relais
+#### Relais
 * 2 unabhängige Kanäle
-* 230 VAC 10 A (einpolig)
-* 230 VAC Eingang über Netzklemme, L, N, PE (welche auch das Onboard Netzteil versorgt)
+* 230 VAC 10 A (einpolig, Summenstrom nicht über 10 A)
+* 230 VAC Eingang über Netzklemme, L, N, PE (welche auch das Netzteil versorgt)
 * Ausgangsklemmen inkl. N und PE
-#### Safety Circuit
-* Optional per eigenen Controller (alternativ per Jumper oder 0R gebrückt)
+##### Safety Circuit
+* Optional per eigenen Controller (alternativ per 0R gebrückt)
+* ATtiny25 (SOIC)
 * Softwarefunktionen
   * Überwachung des ESP per Watchdog
-  * Externe Freigabe per Enable Eingang
+  * Externe Freigabe per Enable Eingang (isoliert)
   * Verriegelung der Kanäle (inkl. Definition von Umschaltzeiten)
-* Mögliche Controller
-  * ATtiny25 (SOIC)
-  * MSPM0C1104 (Cortex-M0+; SOT-23-THN)
  
-##### Pinning
+###### Pinning
 | Pin | Port | ATtiny25                               | Funktion    |
 |-----|------|----------------------------------------|-------------|
 | 1   | PB5  | PCINT5/RESET/ADC0/dW                   | Ext. Enable |
@@ -83,13 +51,32 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 ### 1-Wire
 * 3 Stecker auf einem Bus (2,54 mm Stiftleiste)
 
-### Eingänge
-* 3 Digitale Eingänge 3,3 - 24 V
-* Isoliert per Optokoppler
-* 1 Analoger Eingang
+
+### Riser-Ports
+
+#### Pinning Micro-Match
+| Pin |       | Funktion | GPIO   |
+|-----|-------|----------|--------|
+| 1  | Supply | +5 V     |        |
+| 2  | Supply | +3.3 V   |        |
+| 3  | IO     | EXT1_IO1 |        |
+| 4  | IO     | EXT2_IO2 |        |
+| 5  | I2C    | SDA      | GPIO11 |
+| 6  | I2C    | SCL      | GPIO12 |
+| 7  | 1-Wire | Data     | GPIO5  |
+| 8  |        | GND      |        |
+
+
+
+
+### ESP Board
+* Arduino Nano ESP32 (NORA-W106-10B [ESP32-S3])
+* Alternative (low-cost) Boards per individueller PCB (mapping auf Nano Footprint) 
+
+#### Pinning
+![Pinning Arduino Nano ESP32](docu/arduino_nano_esp32_pinning.png)
 
 ## GPIO Zuordnung
-
 | GPIO | Funktion             | Funktionseinheit | Beschreibung |
 |------|----------------------|------------------|--------------|
 | 0    | LED green            |                  |              |
@@ -117,3 +104,16 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 | 46   | LED red              |                  |              |
 | 47   | SPI CIPO             |                  |              |
 | 48   | SPI SCK; LED_BUILDIN |                  |              |
+
+#### Standardpins
+| ~D | GPIO | I2C | SPI         |
+|----|------|-----|-------------|
+| 21 | 11   | SDA |             |
+| 22 | 12   | SCL |             |
+| 10 | 21   |     | CS          |
+| 11 | 38   |     | COPI (MOSI) |
+| 12 | 47   |     | CIPO (MISO) |
+| 13 | 48   |     | SCK         |
+
+
+![](docu/efc_pcb_cad_iso.png)
