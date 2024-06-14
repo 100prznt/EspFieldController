@@ -4,6 +4,7 @@
 Erweitert den [ESP Field Controller](../) um zwei EZO Circuit Sockel, welche die entsprechenden Module von Atlas Scientifics aufnehmen können.
 
 ![Zusammenbau im Spelsberg Gehäuse](docu/war_assembly.png)
+_Der Water Analytic Riser findet zusammen mit dem ESP Field Controller im Spelsberg Industriegehäuse platz._
 
 ## Anwendung
 
