@@ -1,26 +1,26 @@
-"Part";"Value";"Device";"Package";"Description";"MF";"MPN";"OC_FARNELL";"OC_NEWARK";"POPULARITY";"SPICEPREFIX";"VALUE";
-"C211";"0u1";"C-EUC0805K";"C0805K";"CAPACITOR, European symbol";"";"";"";"";"52";"C";"";
-"C212";"0u1";"C-EUC0805K";"C0805K";"CAPACITOR, European symbol";"";"";"";"";"52";"C";"";
-"C213";"0u1";"C-EUC0805K";"C0805K";"CAPACITOR, European symbol";"";"";"";"";"52";"C";"";
-"C214";"1u";"C-EUC0805K";"C0805K";"CAPACITOR, European symbol";"";"";"";"";"52";"C";"";
-"C215";"2u2";"C-EUC0805K";"C0805K";"CAPACITOR, European symbol";"";"";"";"";"52";"C";"";
-"C221";"0u1";"C-EUC0805K";"C0805K";"CAPACITOR, European symbol";"";"";"";"";"52";"C";"";
-"C222";"0u1";"C-EUC0805K";"C0805K";"CAPACITOR, European symbol";"";"";"";"";"52";"C";"";
-"C223";"0u1";"C-EUC0805K";"C0805K";"CAPACITOR, European symbol";"";"";"";"";"52";"C";"";
-"C224";"1u";"C-EUC0805K";"C0805K";"CAPACITOR, European symbol";"";"";"";"";"52";"C";"";
-"C225";"2u2";"C-EUC0805K";"C0805K";"CAPACITOR, European symbol";"";"";"";"";"52";"C";"";
-"Q211";"LD2981";"LD2981";"SOT89";"";"";"";"";"";"";"";"";
-"Q221";"LD2981";"LD2981";"SOT89";"";"";"";"";"";"";"";"";
-"R211";"4K7";"R-EU_R0603";"R0603";"RESISTOR, European symbol";"";"";"";"";"70";"R";"";
-"R212";"4K7";"R-EU_R0603";"R0603";"RESISTOR, European symbol";"";"";"";"";"70";"R";"";
-"R221";"4K7";"R-EU_R0603";"R0603";"RESISTOR, European symbol";"";"";"";"";"70";"R";"";
-"R222";"4K7";"R-EU_R0603";"R0603";"RESISTOR, European symbol";"";"";"";"";"70";"R";"";
-"T211";"";"SI8600";"SO08";"";"";"";"";"";"";"";"";
-"T212";"RECOM_R1SE-0505";"RECOM_R1SE-0505";"R1SE_0505";"";"";"";"";"";"";"";"";
-"T221";"";"SI8600";"SO08";"";"";"";"";"";"";"";"";
-"T222";"RECOM_R1SE-0505";"RECOM_R1SE-0505";"R1SE_0505";"";"";"";"";"";"";"";"";
-"U210";"pH Circuit";"EZOSOCKET";"EZO";"EZO™ Device";"";"";"";"";"";"";"pH Circuit";
-"U220";"pH Circuit";"EZOSOCKET";"EZO";"EZO™ Device";"";"";"";"";"";"";"pH Circuit";
-"X100";"MICROMATCH-8";"MICROMATCH-8";"MICROMATCH-8";"MicroMaTch 8  7-215464-8 / 0-215464-8";"FARNELL";"7-215464-8";"3784642";"26H0301";"";"";"";
-"X210";"TE5227161";"TE5227161-9";"TE5227161";"BNC-Buchse";"";"";"";"";"";"";"TE5227161";
-"X220";"TE5227161";"TE5227161-9";"TE5227161";"BNC-Buchse";"";"";"";"";"";"";"TE5227161";
+"Part","Value","Device","Package","Description","MF","MPN","OC_FARNELL","OC_NEWARK","POPULARITY","SPICEPREFIX","VALUE",
+"C211","0u1","C-EUC0805K","C0805K","CAPACITOR, European symbol","","","","","52","C","",
+"C212","0u1","C-EUC0805K","C0805K","CAPACITOR, European symbol","","","","","52","C","",
+"C213","0u1","C-EUC0805K","C0805K","CAPACITOR, European symbol","","","","","52","C","",
+"C214","1u","C-EUC0805K","C0805K","CAPACITOR, European symbol","","","","","52","C","",
+"C215","2u2","C-EUC0805K","C0805K","CAPACITOR, European symbol","","","","","52","C","",
+"C221","0u1","C-EUC0805K","C0805K","CAPACITOR, European symbol","","","","","52","C","",
+"C222","0u1","C-EUC0805K","C0805K","CAPACITOR, European symbol","","","","","52","C","",
+"C223","0u1","C-EUC0805K","C0805K","CAPACITOR, European symbol","","","","","52","C","",
+"C224","1u","C-EUC0805K","C0805K","CAPACITOR, European symbol","","","","","52","C","",
+"C225","2u2","C-EUC0805K","C0805K","CAPACITOR, European symbol","","","","","52","C","",
+"Q211","LD2981","LD2981","SOT89","","","","","","","","",
+"Q221","LD2981","LD2981","SOT89","","","","","","","","",
+"R211","4K7","R-EU_R0603","R0603","RESISTOR, European symbol","","","","","70","R","",
+"R212","4K7","R-EU_R0603","R0603","RESISTOR, European symbol","","","","","70","R","",
+"R221","4K7","R-EU_R0603","R0603","RESISTOR, European symbol","","","","","70","R","",
+"R222","4K7","R-EU_R0603","R0603","RESISTOR, European symbol","","","","","70","R","",
+"T211","","SI8600","SO08","","","","","","","","",
+"T212","RECOM_R1SE-0505","RECOM_R1SE-0505","R1SE_0505","","","","","","","","",
+"T221","","SI8600","SO08","","","","","","","","",
+"T222","RECOM_R1SE-0505","RECOM_R1SE-0505","R1SE_0505","","","","","","","","",
+"U210","pH Circuit","EZOSOCKET","EZO","EZOï¿½ Device","","","","","","","pH Circuit",
+"U220","pH Circuit","EZOSOCKET","EZO","EZOï¿½ Device","","","","","","","pH Circuit",
+"X100","MICROMATCH-8","MICROMATCH-8","MICROMATCH-8","MicroMaTch 8  7-215464-8 / 0-215464-8","FARNELL","7-215464-8","3784642","26H0301","","","",
+"X210","TE5227161","TE5227161-9","TE5227161","BNC-Buchse","","","","","","","TE5227161",
+"X220","TE5227161","TE5227161-9","TE5227161","BNC-Buchse","","","","","","","TE5227161",
