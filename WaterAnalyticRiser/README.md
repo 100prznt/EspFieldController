@@ -31,4 +31,5 @@ Um eine Potentialverschiebung an den eingesetzen Messelektroden zu vermeiden, is
 
 * 1-Wire Stecker für DS18B20
 * Taster für Kalibrierung
+* Linear geregelte Spannungsversorgung (low noise)
 * Versorgunsspannung schaltbar (stand-by)
