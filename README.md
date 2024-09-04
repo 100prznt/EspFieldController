@@ -6,7 +6,7 @@ Modular aufgebauter Hardware-Controller für den Betrieb mit ESPHome.
 Mit dem **ESP Field Controller** möchte ich eine Hardwarebasis für den Einsatz von ESPHome im "Außenbereich", also zumindest außerhab von Wohnräumen, schaffen. Eine wichtige Anforderung ist hier natürlich die [Schutzart](https://de.wikipedia.org/wiki/Schutzart). Daher wird der Controller in ein entsprechnd klassifiziertes Gehäuse montiert und verfügt auch über ein eigenes Netzteil. Basisfunktionalität, welche sehr oft benötigt wird, bringt der Controller selber mit. Für Anwendungen, welche etwas speziellere Features benötigen, lässt sich der Controller modular erweitern.
 
 ## Projektstatus
-Nach einem ersten Prototyp-Aufbau auf dem Breadboard, folgt nun die erste PCB Revision. Hier ein fertiger **EspFieldController** mit gebrückter *Safety Circuit*.
+Nach einem ersten Prototyp-Aufbau auf dem Breadboard, folgt nun die erste PCB Revision. Hier ein fertiger **EspFieldController** mit gebrückter *Safety Circuit* und [WaterAnalyticRiser](WaterAnalyticRiser) *(WAR)*.
 
 ![Aufgebauter EspFieldController mit Water Analytic Riser](WaterAnalyticRiser/docu/IMG_4409.jpg)
 
