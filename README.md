@@ -8,7 +8,7 @@ Mit dem **ESP Field Controller** möchte ich eine Hardwarebasis für den Einsatz
 ## Projektstatus
 Nach einem ersten Prototyp-Aufbau auf dem Breadboard, folgt nun die erste PCB Revision. Hier ein fertiger **EspFieldController** mit gebrückter *Safety Circuit*.
 
-![Aufgebauter EspFieldController](docu/IMG_4394.jpg)
+![Aufgebauter EspFieldController mit Water Analytic Riser](WaterAnalyticRiser/docu/IMG_4409.jpg)
 
 ## Basisfunktionen
 

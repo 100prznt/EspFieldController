@@ -6,6 +6,8 @@ Erweitert den [ESP Field Controller](../) um zwei EZO Circuit Sockel, welche die
 ![Zusammenbau im Spelsberg Gehäuse](docu/war_assembly.png)
 _Der Water Analytic Riser findet zusammen mit dem ESP Field Controller im Spelsberg Industriegehäuse platz._
 
+![Aufgebauter EspFieldController mit Water Analytic Riser](docu/IMG_4408.jpg)
+
 ## Anwendung
 
 Die Idee hinter dem __Water Analytic Riser__ ist der Aufbau einer automatischen Pool-Dosiersteuerung. Hierzu ist es erforderlich den __pH-Wert__ sowie das __Redoxpotential__ (ORP) messtechnisch zu erfassen und entsprechende __Dosierpumpen__ für Schwefelsäure (pH Senker) bzw. Natriumhypochlorit (Chlor) anzusteueren.
