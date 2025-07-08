@@ -60,7 +60,7 @@ Nach einem ersten Prototyp-Aufbau auf dem Breadboard, folgt nun die erste PCB Re
 ## Riser
 Zur modularen Erweiterung können an den _EspFiledController_ bis zu zwei _Riser Boards_ angeschlossen werden.
 * [WAR - Water Analytic Riser](/WaterAnalyticRiser)
-* [WCR - WeightCellRiser](/WeightCellRiser)
+* [LCR - LoadCellRiser](/LoadCellRiser)
 
 ### Riser-Ports
 
