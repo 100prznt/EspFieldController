@@ -5,3 +5,9 @@ Erweitert den [ESP Field Controller](../) um zwei HX711 Wägezellen Verstärker.
 ![SparkFun HX711 Load Cell Amplifier](https://esphome.io/_images/hx711-full.jpg)
 
 * [ESPHome - HX711](https://esphome.io/components/sensor/hx711)
+
+
+### Notes
+
+* [SparkFun - Load Cell Amplifier HX711 Breakout Hookup Guide](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide)
+* [SparFun - Load Cell Combinator - Schematics](https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/SparkFun%20Load%20Sensor%20Combinator%20v11.pdf)
