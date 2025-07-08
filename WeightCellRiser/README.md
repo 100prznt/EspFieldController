@@ -11,7 +11,7 @@ Erweitert den [ESP Field Controller](../) um zwei HX711 Wägezellen Verstärker.
 ![Adafruit - NAU7802 24-bit ADC](https://cdn-learn.adafruit.com/assets/assets/000/137/924/large1024/adafruit_products_double.jpg?1750770735)
 
 * [ESPHome - NAU7802]([https://esphome.io/components/sensor/hx711](https://esphome.io/components/sensor/nau7802))
-
+* [I2C Mux](https://esphome.io/components/tca9548a)
 
 
 ### Notes
