@@ -122,3 +122,9 @@ Nach einem ersten Prototyp-Aufbau auf dem Breadboard, folgt nun die erste PCB Re
 
 
 ![](docu/efc_pcb_cad_iso.png)
+
+## Feature Request (next version)
+* Relais überwachen
+  - Stromüberwachung
+  - Sicherheitsrelais
+* Rückmeldung Safety Cricuit an ESP
